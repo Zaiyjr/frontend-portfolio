@@ -14,14 +14,14 @@ export default function Contact() {
             <FontAwesomeIcon icon={faEnvelope} className="text-emerald-500 mt-1 text-lg dark:text-emerald-400" />
             <div>
               <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Email</p>
-              <a href="mailto:zaiy3944@gmail.com" className="text-slate-800 hover:text-emerald-500 transition-colors break-all dark:text-slate-200 dark:hover:text-emerald-400">zaiy.dev@gmail.com</a>
+              <a href="mailto:zaiy.dev@gmail.com" className="text-slate-800 hover:text-emerald-500 transition-colors break-all dark:text-slate-200 dark:hover:text-emerald-400">zaiy.dev@gmail.com</a>
             </div>
           </div>
 
           <div className="flex items-start gap-4 bg-white border border-slate-200 p-5 rounded-xl shadow-sm dark:bg-slate-900/40 dark:border-slate-800/80">
             <FontAwesomeIcon icon={faPhone} className="text-emerald-500 mt-1 text-lg dark:text-emerald-400" />
             <div>
-              <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Phone</p>
+              <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Phone&WA</p>
               <p className="text-slate-800 dark:text-slate-200">+856 20 55006901</p>
             </div>
           </div>
