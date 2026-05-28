@@ -37,13 +37,15 @@ export default function Skills() {
         setSkillGroups(groupSkills(data));
         setError('');
       })
-      .catch(err => {
-        console.error("Failed to load skills", err);
-        if (isMounted) {
-          setSkillGroups([]);
-          setError('ບໍ່ສາມາດດຶງຂໍ້ມູນທັກສະຈາກ backend ໄດ້.');
-        }
-      })
+      // 🔄 ປ່ຽນຢູ່ບ່ອນ catch ຂອງ useEffect:
+.catch((err) => {
+  console.error('Failed to load projects', err);
+  if (isMounted) {
+    setProjects([]);
+    // 💡 ປ່ຽນຂໍ້ຄວາມໃຫ້ເໝາະສົມກັບເວັບທີ່ຢູ່ບົນ Cloud
+    setError('ບໍ່ສາມາດເຊື່ອມຕໍ່ກັບ Server ໄດ້ໃນຂະນະນີ້. ກະລຸນາລໍຖ້າ 1 ນາທີ ແລ້ວລອງ Refresh ໜ້າເວັບຄືນໃໝ່ (Server ກຳລັງເລີ່ມຕັ້ງຄ່າບູດເຄື່ອງ).');
+  }
+})
       .finally(() => {
         if (isMounted) setLoading(false);
       });
@@ -57,7 +59,7 @@ export default function Skills() {
     <div className="max-w-5xl mx-auto px-4 py-12">
       <div className="mb-12">
         <h2 className="text-3xl font-bold mb-2">ທັກສະຄວາມສາມາດ</h2>
-        <p className="text-slate-600 dark:text-slate-400">ເຄື່ອງມື ແລະ ເຕັກໂນໂລຊີທີ່ຂ້ອຍໃຊ້ເປັນປະຈຳໃນການພັດທະນາຊອບແວຣ໌.</p>
+        <p className="text-slate-600 dark:text-slate-400">ເຄື່ອງມື ແລະ ເຕັກໂນໂລຊີທີ່ຂ້ອຍໃຊ້ໃນການພັດທະນາຊອບແວຣ໌.</p>
       </div>
 
       {loading && (
