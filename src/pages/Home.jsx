@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   const languages = [
@@ -25,11 +25,11 @@ export default function Home() {
         
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed dark:text-slate-400">
           ຂ້າພະເຈົ້າ ເປັນນັກພັດທະນາຊັອບແວ Full-Stack ທີ່ມັກໃນສາຍງານການພັດທະນາລະບົບ ບໍ່ວ່າຈະເປັນ Website, Application ມັກແກ້ໄຂບັນຫາຕ່າງໆ.
-          ການ Coding ເປັນສິ່ງທີ່ເຮັດໃຫ້ ຂ້າພະເຈົ້າ enjoy&happy ຕອນທີ່ສາມາດແກ້ໄຂຂໍ້ຜິດພາດຂອງ code ໄດ້. ດັ່ງນັ້ນ, ຂ້າພະເຈົ້າ ຫວັງວ່າ ໃນອານາຄົດ ເຮົາຈະຊ່ວຍກັນຊຸກຍູ້ການພັດທະນາເຕັກໂນໂລຊີບ້ານເຮົາໃຫ້ທັນສະໄໝ.
+          ການ Coding ເປັນສິ່ງທີ່ເຮັດໃຫ້ ຂ້າພະເຈົ້າ enjoy ຕອນທີ່ສາມາດແກ້ໄຂຂໍ້ຜິດພາດຂອງ code ໄດ້ ແລະ ສາມາດສັ້ງສັນຊອບແວໄດ້. ດັ່ງນັ້ນ, ຂ້າພະເຈົ້າ ຫວັງວ່າ ໃນອານາຄົດ ເຮົາຈະຊ່ວຍກັນຊຸກຍູ້ການພັດທະນາເຕັກໂນໂລຊີບ້ານເຮົາໃຫ້ທັນສະໄໝ.
   
         </p>
            
-           <h1 className="font-bold  text-3xl text-emerald-600">Technologies Used:</h1>
+           <h1 className="font-bold  text-3xl ">Technologies Used:</h1>
 
         <div className="pt-2">
           <div className="mb-3 flex items-center justify-between gap-4">
@@ -70,9 +70,9 @@ export default function Home() {
         </div>
 
         <div className="flex gap-5 pt-8 text-slate-500 text-xl dark:text-slate-500">
-          <a href="#" className="hover:text-emerald-400 transition-colors"><FontAwesomeIcon icon={faGithub} /></a>
-          <a href="#" className="hover:text-emerald-400 transition-colors"><FontAwesomeIcon icon={faLinkedin} /></a>
-          <a href="#" className="hover:text-emerald-400 transition-colors"><FontAwesomeIcon icon={faFileLines} /></a>
+          <a href="https://github.com/Zaiyjr" target="_blank" className="hover:text-emerald-400 transition-colors"><FontAwesomeIcon icon={faGithub} /></a>
+          <a href="https://www.facebook.com/xaysana.ketkeo.12" target='_black' className="hover:text-emerald-400 transition-colors"><FontAwesomeIcon icon={faFacebook} /></a>
+
         </div>
      
       </div>
