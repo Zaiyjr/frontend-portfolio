@@ -94,11 +94,11 @@ export default function Projects() {
               </div>
               
               <div className="flex gap-4 border-t border-slate-200 pt-4 text-sm dark:border-slate-800/60">
-                <a href={proj.github || '#'} className="flex items-center gap-2 text-slate-600 hover:text-slate-950 transition-colors dark:text-slate-400 dark:hover:text-slate-100">
+                <a href={proj.github || '#'} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-600 hover:text-slate-950 transition-colors dark:text-slate-400 dark:hover:text-slate-100">
                   <FontAwesomeIcon icon={faGithub} /> Code
                 </a>
-                <a href={proj.demo || '#'} className="flex items-center gap-2 text-emerald-600 hover:text-emerald-500 transition-colors ml-auto dark:text-emerald-400 dark:hover:text-emerald-300">
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" /> Live Demo
+                <a href={proj.demo || '#'}  target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-600 hover:text-emerald-500 transition-colors ml-auto dark:text-emerald-400 dark:hover:text-emerald-300">
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" /> ເຂົ້າເບິ່ງ
                 </a>
               </div>
             </div>
